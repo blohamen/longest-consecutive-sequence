@@ -5,10 +5,11 @@ array.sort(function(a,b){
 return a-b;
 });
 var result = 0;
-var length= 0;
+var length = 1;
 for(var i = 0; i<array.length - 1; i++)
-{
-    if(array[i+1] - array[i] === 1)
+{  
+    if(array[i+1] === array[i]) continue; 
+    if(array[i+1] - 1 === array[i])
     {
         length++;
         result = Math.max(result, length);
