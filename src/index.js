@@ -4,7 +4,7 @@ module.exports = function longestConsecutiveLength(array) {
 array.sort(function(a,b){
 return a-b;
 });
-var result = 0;
+var result = 1;
 var length = 1;
 for(var i = 0; i<array.length - 1; i++)
 {  
